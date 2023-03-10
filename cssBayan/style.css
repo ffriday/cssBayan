@@ -33,12 +33,16 @@ hr {
     flex-wrap: nowrap;
 }
 
+.main:hover .line img{
+    visibility: visible;
+}
+
 .block {
 
 }
 
 .block:hover .image{
-    height: 300px;
+    height: 500px;
     width: auto;
     transition-duration: 500ms;
     transition-timing-function: ease-in;
@@ -52,9 +56,26 @@ hr {
 }
 
 .line {
-    /* border-left: 7px solid rgb(20, 83, 202); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 0px 10px 0px;
     font-weight: bold;
+    vertical-align: middle;
+}
+
+.line:hover img{
+    transform: rotate(270deg);
+    transition-duration: 500ms;
+}
+
+.line img{
+    max-width: 35px;
+    max-height: 35px;
+    align-items: end;
+    transition-duration: 500ms;
+    visibility: hidden;
 }
 
 .image {
