@@ -31,7 +31,7 @@ div {
 }
 
 .lbl > input:checked + div + div{
-    max-height: 50vh;
+    max-height: 70vh;
     height: auto;
     width: auto;
     transition-duration: 500ms;
@@ -53,7 +53,7 @@ div {
     justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 75vw;
+    width: 70vw;
     font-size: large;
 }
 
@@ -112,7 +112,7 @@ div {
 
 @media screen and (max-width: 1920px){
    .main {
-        width: 75vw;
+        width: 70vw;
         font-size: large;
    }
 }
@@ -122,6 +122,9 @@ div {
         width: 90vw;
         font-size: medium;
     }
+    .line img{
+        visibility: visible;
+    }
 }
 
 @media screen and (max-width: 320px){
@@ -129,11 +132,14 @@ div {
         width: 99vw;
         font-size: small;
     }
+    .line img{
+        visibility: visible;
+    }
 }
 
 @media (hover: hover) {
     .block:hover .image{
-        max-height: 50vh;
+        max-height: 70vh;
         height: auto;
         width: auto;    
         transition-duration: 500ms;
