@@ -13,6 +13,10 @@ body {
     justify-content: center;
 }
 
+.bayan {
+    color: black;
+}
+
 div {
     cursor: grab;
 }
@@ -38,13 +42,17 @@ div {
     transition-duration: 500ms;
 }
 
+.lbl > input:checked + div{
+    color: black;
+}
+
 .main {
     display: flex;
     align-self: start;
     justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 70vw;
+    width: 75vw;
     font-size: large;
 }
 
@@ -52,14 +60,13 @@ div {
     visibility: visible;
 }
 
-/* .block {
-    display: flex;
-    width: 100%;
-} */
+.main:hover div{
+    color: rgb(64, 64, 170);
+}
 
 .image:active {
     filter: grayscale(100%);
-    transition-duration: 100ms;
+    transition-duration: 50ms;
 }
 
 .line {
@@ -103,8 +110,8 @@ div {
 
 @media screen and (max-width: 1920px){
    .main {
-    width: 75vw;
-    font-size: large;
+        width: 75vw;
+        font-size: large;
    }
 }
 
