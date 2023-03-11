@@ -31,7 +31,8 @@ div {
 }
 
 .lbl > input:checked + div + div{
-    height: 40vh;
+    max-height: 50vh;
+    height: auto;
     width: auto;
     transition-duration: 500ms;
     transition-timing-function: ease-in;
@@ -96,7 +97,8 @@ div {
 .image {
     display: flex;
     justify-content: center;
-    /* object-fit: contain; */
+    object-fit: contain;
+    max-height: 0vh;
     height: 0vh;
     width: 100%;
     transition-duration: 500ms;
@@ -104,8 +106,8 @@ div {
 }
 
 .pic {
-    max-width:100%;
-    max-height:100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 @media screen and (max-width: 1920px){
@@ -131,7 +133,8 @@ div {
 
 @media (hover: hover) {
     .block:hover .image{
-        height: 40vh;
+        max-height: 50vh;
+        height: auto;
         width: auto;    
         transition-duration: 500ms;
         transition-timing-function: ease-in;
